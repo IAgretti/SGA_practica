@@ -1,0 +1,69 @@
+GET http://localhost:3000/alumnos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZThjYmUyZGFlOGEwMzFiMGJhNDJiZiIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzk0NDkzMjYxLCJleHAiOjE3OTQ0OTMyNzF9.r4OII1E_AIphXowb1yx9Go5-vegNtyjw8_11r5Xv_Sk
+
+###
+GET http://localhost:3000/alumnos/1002
+
+###
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+    "legajo": 1023,
+    "nombre": "Ramón",
+    "carrera": "Sistemas",
+    "correo": "ramon@mail.com"
+}
+###
+PUT http://localhost:3000/alumnos/1002
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZThjYmUyZGFlOGEwMzFiMGJhNDJiZiIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzk0OTE5OTU3LCJleHAiOjE3OTQ5MjM1NTd9.-VjA1R8n8h6l3JMsT8Lq8OIrKJ3vrS1JVcZwEJgzN8A
+
+{
+    "nombre": "Juan Carlos",
+    "carrera": "Programación IV",
+    "correo": "juan@mail.com"
+}
+
+###
+DELETE http://localhost:3000/alumnos/1021
+
+###
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+    "id": 5,
+    "nombre": "Rocío",
+    "carrera": "Programación"
+}
+###
+GET http://localhost:3000/docentes
+
+###
+POST http://localhost:3000/docentes
+Content-Type: application/json
+
+{
+    "dni": 10238999,
+    "nombre": "Ramón",
+    "especialidad": "Sistemas",
+    "correo": "ramon@mail.com"
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@sga.com",
+    "password": "claveDePrueba123!"
+}
+
+###
+GET http://localhost:3000/alumnos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZThjYmUyZGFlOGEwMzFiMGJhNDJiZiIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzk0NDkzMzM5LCJleHAiOjE3OTQ0OTMzNTl9.tXAWvuN5bh-aPOEKGsXQKV9baY5mpJde3ho8Pks4YZI
+
+###
+GET http://localhost:3000/alumnos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZmM0NzUyMmU4ZmI0MTQ3NDFjN2UzYiIsInJvbCI6InVzdWFyaW8iLCJpYXQiOjE3OTQ5MTk2MTQsImV4cCI6MTc5NDkxOTYzNH0.GovMvQwIjhUNTvfYk5n9c4csJntVmkmmXogCInhszzg
