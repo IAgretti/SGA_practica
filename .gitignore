@@ -7,11 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
 dist
 dist-ssr
 *.local
-.env
+
+# archivos de prueba y generación de usuario
 crearUsuario.js
 nuevoUsuario.js
 pruebas.http
@@ -26,3 +26,22 @@ pruebas.http
 *.njsproj
 *.sln
 *.sw?
+
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Archivos de compilación
+dist/
+build/
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
