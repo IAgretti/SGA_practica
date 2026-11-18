@@ -25,8 +25,9 @@ function SelectorTema() {
       <MaterialUISwitch
         checked={modoOscuro}
         onChange={cambiarModo}
-        inputProps={{
-          "aria-label": "Cambiar entre modo claro y oscuro",
+        slotProps={{
+            input: {
+          "aria-label": "Cambiar entre modo claro y oscuro"}
         }}
       />
     </Box>

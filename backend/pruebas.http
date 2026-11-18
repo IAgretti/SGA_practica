@@ -67,3 +67,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZThjYmUyZ
 ###
 GET http://localhost:3000/alumnos
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZmM0NzUyMmU4ZmI0MTQ3NDFjN2UzYiIsInJvbCI6InVzdWFyaW8iLCJpYXQiOjE3OTQ5MTk2MTQsImV4cCI6MTc5NDkxOTYzNH0.GovMvQwIjhUNTvfYk5n9c4csJntVmkmmXogCInhszzg
+
+###
+@url = https://sga-backend-prueba.onrender.com
+POST {{url}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@sga.com",
+    "password": "claveDePrueba123!"
+}

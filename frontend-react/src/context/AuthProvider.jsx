@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { AuthContext } from "./AuthContext";
+import API_URL from "../config/api"
+
 
 const AuthProvider = ({ children }) => {  // componente proveedor de autenticación
   const [token, setToken] = useState(() => localStorage.getItem("token")) 
@@ -22,7 +24,7 @@ const AuthProvider = ({ children }) => {  // componente proveedor de autenticaci
       }
       try {
         const respuesta = await fetch(
-          "http://localhost:3000/alumnos",
+          API_URL,
           {
             headers: {
               Authorization: `Bearer ${tokenGuardado}`

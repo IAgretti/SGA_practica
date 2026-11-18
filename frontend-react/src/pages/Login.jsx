@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Alert, Box, Button, TextField, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useAuth } from "../context/useAuth";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import API_URL from "../config/api"
+const API_LOGIN = `${API_URL}/auth/login`
 
 export default function Login() {
     const navigate = useNavigate() // Hook de React Router para redirigir a otra ruta después del login
@@ -26,7 +28,7 @@ export default function Login() {
         setMensaje("") // Limpiar el mensaje de éxito al iniciar un nuevo intento de login
 
     try {
-        const respuesta = await fetch("http://localhost:3000/auth/login", {
+        const respuesta = await fetch(API_LOGIN, {
             method: "POST",  // se utiliza POST para enviar datos al servidor
             headers: {"Content-Type":"application/json"}, // se indica que el cuerpo de la solicitud es JSON
             body: JSON.stringify({ email, password }) // se envían los datos del formulario como JSON en el cuerpo de la solicitud

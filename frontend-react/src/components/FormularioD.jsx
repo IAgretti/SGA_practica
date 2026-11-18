@@ -1,5 +1,6 @@
 import { useState } from "react";
-const API_DOCENTES = "http://localhost:3000/docentes";
+import API_URL from "../config/api";
+const API_DOCENTES = `${API_URL}/docentes`
 import { Button, Paper, TextField, Alert } from "@mui/material";
 import "../styles/formulario.css";
 

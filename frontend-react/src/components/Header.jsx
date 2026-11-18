@@ -37,7 +37,7 @@ export default function Header() {
                             <SchoolRoundedIcon sx={{ fontSize: 27 }} />
                         </Box>
                         <Box>
-                            <Typography component="h1" variant="h5" fontWeight={700} lineHeight={1.1}>
+                            <Typography component="h1" variant="h5" fontWeight={700} sx={ {lineHeight:1.1}}>
                                 SGA
                             </Typography>
                             <Typography

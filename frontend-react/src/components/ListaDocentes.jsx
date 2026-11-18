@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-const API_DOCENTES = "http://localhost:3000/docentes"
+import API_URL from "../config/api"
+const API_DOCENTES = `${API_URL}/docentes`
 
 function ListaDocentes({ actualizar, onDocenteCreado, onEditarDocente }){
     const [docentes, setDocentes] = useState([])
