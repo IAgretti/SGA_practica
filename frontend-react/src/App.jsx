@@ -1,5 +1,5 @@
 import Alumnos from "./pages/Alumnos";
-import Inicio from "./pages/inicio";
+import Inicio from "./pages/Inicio";
 import LayoutPpal from "./layouts/LayoutPpal";
 import { Routes, Route } from "react-router-dom";
 import FAQ from "./pages/FAQ";
